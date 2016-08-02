@@ -21,7 +21,3 @@ learnyounode
 ```
 
 This will kick off the walkthrough for learnyounode. Each file corresponds to the same numbered exercise in the course. Follow the instructions prompted in the terminal.
-
-## License
-
-MIT
