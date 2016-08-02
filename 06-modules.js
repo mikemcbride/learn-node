@@ -1,11 +1,14 @@
-var myFirstModule = require('./myFirstModule');
+const myFirstModule = require('./myFirstModule')
 
-myFirstModule(process.argv[2], process.argv[3], function (err, data) {
+const dirname = process.argv[2]
+const ext = process.argv[3]
+
+myFirstModule(dirname, ext, (err, data) => {
   if (err) {
-    throw err;
+    throw err
   }
 
-  data.forEach(function (file) {
-    console.log(file);
+  data.forEach(file => {
+    console.log(file)
   })
 });

@@ -1,13 +1,13 @@
 'use strict'
-const net = require('net');
-const strftime = require('strftime');
+const net = require('net')
+const strftime = require('strftime')
+
+const port = Number(process.argv[2])
 
 function now () {
-  return strftime('%F %H:%M');
+  return strftime('%F %H:%M')
 }
 
-const server = net.createServer(socket => {
+net.createServer(socket => {
   socket.end(now() + '\n')
-})
-
-server.listen(Number(process.argv[2]))
+}).listen(port)

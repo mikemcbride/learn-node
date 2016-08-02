@@ -2,6 +2,8 @@
 const http = require('http')
 const url = require('url')
 
+const port = Number(process.argv[2])
+
 function parsetime (time) {
   return {
     hour: time.getHours(),
@@ -11,9 +13,7 @@ function parsetime (time) {
 }
 
 function unixtime (time) {
-  return {
-    unixtime: time.getTime()
-  }
+  return { unixtime: time.getTime() }
 }
 
 http.createServer((req, res) => {
@@ -36,4 +36,4 @@ http.createServer((req, res) => {
 
   res.writeHead(200, { 'Content-Type': 'application/json' })
   res.end(JSON.stringify(result))
-}).listen(Number(process.argv[2]))
+}).listen(port)

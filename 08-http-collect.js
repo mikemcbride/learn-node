@@ -1,15 +1,17 @@
-const http = require('http');
-const bl = require('bl');
+const http = require('http')
+const bl = require('bl')
 
-const url = process.argv[2];
+const url = process.argv[2]
 
-http.get(url, function (res) {
-  res.pipe(bl(function (err, data) {
+http.get(url, res => {
+  res.pipe(bl((err, data) => {
     if (err) {
-      return console.error(err);
+      return console.error(err)
     }
-    data = data.toString();
-    console.log(data.length);
-    console.log(data);
-  }));
-});
+
+    data = data.toString()
+
+    console.log(data.length)
+    console.log(data)
+  }))
+})

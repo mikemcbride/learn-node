@@ -1,15 +1,14 @@
-var fs = require('fs')
-var path = require('path')
+const fs = require('fs')
+const path = require('path')
 
 module.exports = function (dirName, extension, cb) {
 
-  fs.readdir(dirName, function (err, list) {
-    if (err)
+  fs.readdir(dirName, (err, list) => {
+    if (err) {
       return cb(err)
+    }
 
-    list = list.filter(function(file) {
-      return path.extname(file) === '.' + extension;
-    })
+    list = list.filter(file => path.extname(file) === '.' + extension)
 
     cb(null, list)
   })

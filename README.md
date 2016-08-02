@@ -3,6 +3,8 @@ learn-node
 
 This is a repository containing files used to complete the learnyounode course from [Nodeschool.io](http://nodeschool.io/#workshopper-list).
 
+> **DISCLAIMER:** this repo contains the answers to all problems from the learnyounode project. I highly recommend you work through them yourself. These are not the official answers, but each one passed.
+
 ## Install
 
 **Prerequisites:** you will need to have the npm module "learnyounode" installed globally to run these lessons.

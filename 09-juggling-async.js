@@ -10,10 +10,11 @@ function printResults () {
 }
 
 function httpGet (index) {
-  http.get(process.argv[2 + index], function (response) {
-    response.pipe(bl(function (err, data) {
-      if (err)
+  http.get(process.argv[2 + index], res => {
+    res.pipe(bl((err, data) => {
+      if (err) {
         return console.error(err)
+      }
 
       results[index] = data.toString()
       count++
