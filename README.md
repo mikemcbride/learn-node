@@ -5,14 +5,19 @@ This is a repository containing files used to complete the learnyounode course f
 
 ## Install
 
+**Prerequisites:** you will need to have the npm module "learnyounode" installed globally to run these lessons.
 ```
 npm install -g learnyounode
+```
+
+**Get set up:**
+```
 git clone git@github.com:mmcbride1007/learn-node.git
 cd learn-node
 npm install
 ```
 
-## Run
+## Run it:
 
 In a terminal:
 
