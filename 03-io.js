@@ -1,8 +1,9 @@
-const fs = require('fs');
+'use strict'
+const fs = require('fs')
 
-const myFile = process.argv[2];
+const myFile = process.argv[2]
 
-const fileContents = fs.readFileSync(myFile);
-const newLineCount = fileContents.toString().split('\n').length - 1;
+const fileContents = fs.readFileSync(myFile)
+const newLineCount = fileContents.toString().split('\n').length - 1
 
-console.log(newLineCount);
+console.log(newLineCount)

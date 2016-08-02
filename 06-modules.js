@@ -1,3 +1,4 @@
+'use strict'
 const myFirstModule = require('./myFirstModule')
 
 const dirname = process.argv[2]
