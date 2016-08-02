@@ -1,0 +1,27 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-program.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmcbride1007/learn-node.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "mmcbride1007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmcbride1007/learn-node/issues"
+  },
+  "homepage": "https://github.com/mmcbride1007/learn-node#readme",
+  "dependencies": {
+    "bl": "^1.1.2",
+    "strftime": "^0.9.2",
+    "through2-map": "^2.0.0"
+  }
+}
